@@ -105,7 +105,7 @@ const TeamCreateModal: React.FC<Props> = ({ visible, onClose, onCreated }) => {
         agent_name: 'Leader',
         conversation_type: dispatchConversationType,
         cli_path: dispatchAgent?.cli_path,
-        custom_agent_id: dispatchAgent?.custom_agent_id,
+        custom_agent_id: dispatchAgent?.custom_agent_id ?? dispatchAgent?.id,
         model: resolvedModel,
       });
 
